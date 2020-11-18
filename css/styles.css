@@ -10034,6 +10034,7 @@ p.lead {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
+  margin-top: 15px;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
