@@ -40,6 +40,7 @@ yarn start
 
 - `app/` - Pages et layouts Next.js (App Router)
 - `components/` - Composants React réutilisables
+- `data/projects.ts` - Liste des projets affichés sur la page `/projects`
 - `public/` - Assets statiques (images, favicon, etc.)
 - `css/` - Fichiers CSS originaux (conservés pour référence)
 
