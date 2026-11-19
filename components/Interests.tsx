@@ -3,6 +3,7 @@ export default function Interests() {
     { icon: 'fas fa-futbol', text: 'Football' },
     { icon: 'fas fa-dumbbell', text: 'Musculation' },
     { icon: 'fas fa-running', text: 'Course à pied' },
+    { icon: 'fas fa-swimmer', text: 'Natation' },
     { icon: 'fas fa-brain', text: 'Veille technologique' },
     { icon: 'fas fa-book', text: 'Manga' },
     { icon: 'fas fa-chess', text: 'Jeu d\'échecs' },

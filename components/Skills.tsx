@@ -2,25 +2,44 @@ export default function Skills() {
   const programmingLanguages = [
     'HTML5',
     'CSS3 (Bootstrap, Sass)',
-    'Javascript (ReactJS, React native,VueJS, AngularJS, NodeJS, Jquery)',
+    'Javascript / TypeScript (ReactJS, VueJS, AngularJS, NodeJS, Jquery)',
+    'Mobile : React Native, Android (Kotlin, Java), Swift, Dart (Flutter)',
+    'Storybook, Jest, Zustand',
     'Ant Design (React), Tailwind CSS, Material UI',
     'Java (Spring)',
     'Python (Django)',
     'PHP5/7 (Symfony)',
-    'Kotlin (Android)',
-    'Dart (Flutter)',
     'Suite ELK (Elasticsearch, Kibana, Logstash, Filebeat)',
   ]
 
-  const databases = ['PostGreSQL', 'MySQL', 'Oracle', 'NoSQL']
+  const databases = ['PostGreSQL', 'MySQL', 'Oracle', 'MongoDB', 'NoSQL']
 
   const software = ['Photoshop', 'Pack Office', 'VMWare', 'GIMP']
+
+  const operatingSystems = ['Linux', 'Windows', 'MacOS']
 
   const methodologies = [
     'Mobile-First, Responsive Design',
     'Tests cross-browser et débogage',
-    'Développement Agile et SCRUM',
+    'Développement Agile (SCRUM, KANBAN)',
+    'Gestion de projet',
+    'Programmation Orientée Objet (JS, PHP, Java)',
   ]
+
+  const languages = ['Anglais (TOEIC niveau B1)', 'Espagnol (niveau scolaire)']
+
+  const renderList = (items: string[]) => (
+    <ul className="fa-ul mb-0">
+      {items.map((item) => (
+        <li key={item}>
+          <span className="fa-li">
+            <i className="fas fa-check"></i>
+          </span>
+          {item}
+        </li>
+      ))}
+    </ul>
+  )
 
   return (
     <section className="resume-section" id="skills">
@@ -31,49 +50,17 @@ export default function Skills() {
         <div className="subheading mb-3">
           Langage de programmation, frameworks et librairies
         </div>
-        <ul className="fa-ul mb-0">
-          {programmingLanguages.map((skill, index) => (
-            <li key={index}>
-              <span className="fa-li">
-                <i className="fas fa-check"></i>
-              </span>
-              {skill}
-            </li>
-          ))}
-        </ul>
+        {renderList(programmingLanguages)}
         <div className="subheading mb-3">Base de données</div>
-        <ul className="fa-ul mb-0">
-          {databases.map((db, index) => (
-            <li key={index}>
-              <span className="fa-li">
-                <i className="fas fa-check"></i>
-              </span>
-              {db}
-            </li>
-          ))}
-        </ul>
+        {renderList(databases)}
+        <div className="subheading mb-3">Systèmes d&apos;exploitation</div>
+        {renderList(operatingSystems)}
         <div className="subheading mb-3">Logiciels</div>
-        <ul className="fa-ul mb-0">
-          {software.map((soft, index) => (
-            <li key={index}>
-              <span className="fa-li">
-                <i className="fas fa-check"></i>
-              </span>
-              {soft}
-            </li>
-          ))}
-        </ul>
+        {renderList(software)}
         <div className="subheading mb-3">Méthodologies</div>
-        <ul className="fa-ul mb-0">
-          {methodologies.map((method, index) => (
-            <li key={index}>
-              <span className="fa-li">
-                <i className="fas fa-check"></i>
-              </span>
-              {method}
-            </li>
-          ))}
-        </ul>
+        {renderList(methodologies)}
+        <div className="subheading mb-3">Langues</div>
+        {renderList(languages)}
       </div>
     </section>
   )
