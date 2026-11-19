@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GITHUB_URL } from '@/data/projects'
 
 export default function About() {
@@ -31,6 +32,10 @@ export default function About() {
             <i className="fab fa-github"></i>
           </a>
         </div>
+        <Link className="btn btn-primary btn-lg mt-5" href="/projects">
+          <i className="fas fa-code mr-2"></i>
+          Voir mes projets
+        </Link>
       </div>
     </section>
   );
