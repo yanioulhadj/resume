@@ -24,6 +24,7 @@ export const projects: Project[] = [
       'Application web pour travailler avec la méthode Pomodoro : minuteur focus / pauses, enchaînement automatique des sessions et liste de tâches.',
     technologies: ['React', 'TypeScript'],
     repoUrl: 'https://github.com/yanioulhadj/pomoflow',
+    demoUrl: 'https://pomoflow-blue.vercel.app',
   },
   {
     name: 'Resume',
