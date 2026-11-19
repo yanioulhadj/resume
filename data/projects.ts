@@ -1,4 +1,4 @@
-export const GITHUB_URL = 'https://github.com/Eldii'
+export const GITHUB_URL = 'https://github.com/yanioulhadj'
 
 export type Project = {
   name: string
@@ -11,33 +11,24 @@ export type Project = {
 // Ajouter / modifier les projets ici.
 export const projects: Project[] = [
   {
-    name: 'Resume VueJS',
-    description: 'Version précédente de mon CV en ligne, développée avec VueJS.',
-    technologies: ['VueJS', 'HTML', 'CSS'],
-    repoUrl: 'https://github.com/Eldii/resume-vuejs',
+    name: 'Poker Planning',
+    description:
+      "Application web de Poker Planning permettant aux équipes Agile d'estimer collaborativement la complexité des tâches lors des sprint plannings.",
+    technologies: ['Next.js', 'React', 'TypeScript', 'NextAuth', 'Redis'],
+    repoUrl: 'https://github.com/yanioulhadj/poker-planning',
+    demoUrl: 'https://poker-planning-lac.vercel.app',
   },
   {
-    name: 'Chronometer',
-    description: 'Application Android de chronomètre.',
-    technologies: ['Kotlin', 'Android'],
-    repoUrl: 'https://github.com/Eldii/chronometer',
+    name: 'Pomoflow',
+    description:
+      'Application web pour travailler avec la méthode Pomodoro : minuteur focus / pauses, enchaînement automatique des sessions et liste de tâches.',
+    technologies: ['React', 'TypeScript'],
+    repoUrl: 'https://github.com/yanioulhadj/pomoflow',
   },
   {
-    name: 'Evil Ducks',
-    description: 'Projet web front-end.',
-    technologies: ['HTML', 'CSS'],
-    repoUrl: 'https://github.com/Eldii/evilducks',
-  },
-  {
-    name: 'Symfony',
-    description: 'Projet PHP réalisé avec le framework Symfony.',
-    technologies: ['PHP', 'Symfony'],
-    repoUrl: 'https://github.com/Eldii/Symfony',
-  },
-  {
-    name: 'Test API',
-    description: "Projet d'expérimentation autour d'une API.",
-    technologies: ['API'],
-    repoUrl: 'https://github.com/Eldii/testAPI',
+    name: 'Resume',
+    description: 'Ce CV en ligne, développé avec Next.js, React et TypeScript.',
+    technologies: ['Next.js', 'React', 'TypeScript'],
+    repoUrl: 'https://github.com/yanioulhadj/resume',
   },
 ]
