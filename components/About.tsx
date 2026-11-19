@@ -1,3 +1,5 @@
+import { GITHUB_URL } from '@/data/projects'
+
 export default function About() {
   return (
     <section className="resume-section" id="about">
@@ -20,7 +22,12 @@ export default function About() {
           >
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a className="social-icon" href="#">
+          <a
+            className="social-icon"
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-github"></i>
           </a>
         </div>
