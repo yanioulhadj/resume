@@ -14,7 +14,7 @@ export default function Interests() {
     <section className="resume-section" id="interests">
       <div className="resume-section-content">
         <h2 className="mb-5">
-          <i className="fas fa-dice"></i> Centres d'interêt
+          <i className="fas fa-dice"></i> Centres d&apos;intérêt
         </h2>
         <ul className="fa-ul mb-0">
           {interests.map((interest, index) => (

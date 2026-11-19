@@ -17,12 +17,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+          href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap"
           rel="stylesheet"
           type="text/css"
         />
         <link
-          href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+          href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap"
           rel="stylesheet"
           type="text/css"
         />

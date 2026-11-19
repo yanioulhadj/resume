@@ -36,8 +36,11 @@ export default function Navigation() {
       const navbar = document.getElementById('navbarSupportedContent')
       if (navbar && navbar.classList.contains('show')) {
         // Utiliser jQuery pour fermer le menu Bootstrap 4
-        if (typeof window !== 'undefined' && (window as any).$) {
-          ;(window as any).$('#navbarSupportedContent').collapse('hide')
+        const { $ } = window as Window & {
+          $?: (selector: string) => { collapse: (action: string) => void }
+        }
+        if ($) {
+          $('#navbarSupportedContent').collapse('hide')
         } else {
           navbar.classList.remove('show')
         }
@@ -119,7 +122,7 @@ export default function Navigation() {
               href="#interests"
               onClick={(e) => handleClick(e, '#interests')}
             >
-              Centres d'interêt
+              Centres d&apos;intérêt
             </a>
           </li>
         </ul>

@@ -7,7 +7,7 @@ CV en ligne développé avec Next.js
 Installer les dépendances :
 
 ```bash
-npm install
+yarn install
 ```
 
 ## Développement
@@ -15,7 +15,7 @@ npm install
 Lancer le serveur de développement :
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
@@ -25,7 +25,7 @@ Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 Créer une version de production :
 
 ```bash
-npm run build
+yarn build
 ```
 
 ## Démarrage en production
@@ -33,7 +33,7 @@ npm run build
 Démarrer le serveur de production :
 
 ```bash
-npm start
+yarn start
 ```
 
 ## Structure du projet
@@ -45,8 +45,8 @@ npm start
 
 ## Technologies utilisées
 
-- Next.js 14
-- React 18
-- TypeScript
+- Next.js 16
+- React 19
+- TypeScript 6
 - Bootstrap 4
 - Font Awesome
